@@ -265,7 +265,7 @@ body.at-entry{overflow:hidden}
 <dialog id="cart">
 <div class="cart-head">
 <div>
-<small>TU LISTA PARA LA TIENDA</small>
+<small>TU LISTA PARA LA TIENDA AQUI EN VILLA ENCANTADA</small>
 <h2>Tu carrito</h2>
 </div>
 <button id="closeCart" aria-label="Cerrar pedido">✕</button>
@@ -56172,7 +56172,7 @@ try {
     const timer = setTimeout(() => controller.abort(), 15000);
     let response;
     try {
-        response = await fetch('./Villa_Encantada_catalogo_actualizado.json', {
+      response = await fetch('./catalogo.json', {
             cache: 'no-store',
             signal: controller.signal
         });
