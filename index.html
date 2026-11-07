@@ -62,7 +62,14 @@ body.at-entry{overflow:hidden}
 
 .cart-item .reference-photo {width:64px;height:64px;margin:0;}.image .reference-photo {height:100%;margin:0;}
 
-.department-card[data-open-dept="lacteos"] img,.department-card[data-open-dept="farmacia"] img{object-fit:contain;background:#f7f5f0;}
+.department-card[data-open-dept="lacteos"] img,
+.department-card[data-open-dept="farmacia"] img {
+    width: 100%;
+    object-fit: cover;
+    background: #f7f5f0;
+}
+.department-card[data-open-dept="lacteos"] img { object-position: center 64%; }
+.department-card[data-open-dept="farmacia"] img { object-position: center 48%; }
 
 .special-products {display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px;align-items:stretch;}
 .special-item {display:flex;flex-direction:column;min-width:0;}
