@@ -115,6 +115,21 @@ body.at-entry{overflow:hidden}
 .comida-secciones>.daily .daily-main{min-width:0;}
 .comida-secciones>.daily .daily-main h2{font-size:clamp(30px,3.4vw,50px);line-height:1.12;}
 @media(max-width:760px){.comida-secciones>.daily{grid-template-columns:1fr;gap:18px;padding:24px 5%;min-height:0;}.comida-secciones>.daily .menu-art img,.comida-secciones>.daily .tortilla-photo img{height:245px;}}
+
+/* Ajuste visual final: comida centrada y más grande; tortillas en cuadro */
+.comida-secciones>.guisados-daily{grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:4%;min-height:520px;padding:44px 5%;}
+.comida-secciones>.guisados-daily .daily-main{width:100%;max-width:570px;justify-self:center;}
+.comida-secciones>.guisados-daily .menu-art{display:flex;align-items:center;justify-content:center;}
+.comida-secciones>.guisados-daily .menu-art img{width:min(100%,440px);height:440px;object-fit:contain;margin-inline:auto;}
+.comida-secciones>.tortillas-daily{min-height:460px;}
+.comida-secciones>.tortillas-daily .tortilla-photo{width:min(100%,390px);aspect-ratio:1/1;height:auto;justify-self:center;border-radius:22px;}
+.comida-secciones>.tortillas-daily .tortilla-photo img{width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;object-position:center;}
+@media(max-width:760px){
+ .comida-secciones>.guisados-daily{grid-template-columns:1fr;min-height:0;padding:28px 5%;}
+ .comida-secciones>.guisados-daily .menu-art img{height:auto;max-height:400px;width:min(100%,380px);}
+ .comida-secciones>.tortillas-daily{min-height:0;}
+ .comida-secciones>.tortillas-daily .tortilla-photo{width:min(100%,340px);}
+}
 </style>
 </head>
 <body>
